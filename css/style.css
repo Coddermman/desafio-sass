@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*Inicializando la pagina, eliminamos los margenes por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/*anidamos el header con sus componentes y clases*/
+header {
+  background-image: url("../imagenes/R.jpg");
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+header h1 {
+  color: rgb(136, 32, 119);
+  text-align: center;
+  font-size: 6rem;
+  font-style: italic;
+  width: 100%;
+}
+
+.ta1 {
+  animation-name: tituloInicial2;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+@keyframes tituloInicial2 {
+  from {
+    transform: translateZ(-100px);
+    color: white;
+  }
+  to {
+    transform: translateZ(100);
+  }
+}
+
+/*estilo para el body*/
+body {
+  background-color: lemonchiffon;
+}
+body h2 {
+  color: white;
+  background-color: orangered;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/*barra de menú*/
+nav {
+  display: flex;
+  position: relative;
+  padding: 3px;
+  height: 5vh;
+  justify-content: space-evenly;
+  background-color: green;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  color: white;
+  text-decoration: solid;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+a:hover {
+  background-color: white;
+  color: orangered;
+  width: 100%;
+  height: 100%;
+}
+
+/*definición de las clases*/
+.border {
+  border: solid 1px black;
+  padding: 5px;
+  margin-top: 50%;
+}
+
+.dist {
+  display: flex;
+  justify-content: center;
+}
+
+.margen {
+  margin: 30px 20px;
+}
+
+.img {
+  justify-content: center;
+  background-size: cover;
+}
+
+.footer {
+  width: 100%;
+  background-color: aquamarine;
+  height: auto;
+  border: solid 1px black;
+}
+
+/*# sourceMappingURL=style.css.map */

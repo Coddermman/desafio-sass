@@ -1,0 +1,100 @@
+@use "variables";
+
+/*Inicializando la pagina, eliminamos los margenes por defecto */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/*anidamos el header con sus componentes y clases*/
+header{
+    background-image: url("../imagenes/R.jpg");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+            h1{
+                color: variables.$h1color;
+                text-align: center;
+                font-size:6rem ;
+                font-style: italic;
+                width: 100%;                  
+}
+}
+.ta1{
+    animation-name: tituloInicial2;
+    animation-duration:9s;
+    animation-iteration-count: infinite ;
+
+        @keyframes tituloInicial2{
+            from{
+            transform: translateZ(-100px);
+            color: white; 
+}
+            to{
+            transform: translateZ(100);
+} 
+}
+
+}
+
+/*estilo para el body*/
+body{
+background-color: lemonchiffon;
+h2{
+    color: variables.$h2color;
+    background-color: orangered;
+    font-size: 1.5rem;
+    text-align: center;
+}
+}
+
+/*barra de menú*/
+nav{
+    display: flex;
+    position:relative;
+    padding: variables.$pad;
+    height:5vh;
+    justify-content: space-evenly;
+    background-color: variables.$bgb;
+    align-items:  center;
+            li{
+                list-style: none;
+                    a{
+                    color: variables.$acolor;
+                    text-decoration:solid;
+                    font-weight: variables.$letrabarra;
+                    font-size: variables.$letrahight;
+} 
+}
+}
+a:hover{
+    background-color: white;
+    color: orangered;
+    width: 100%;
+    height: 100%;
+}
+/*definición de las clases*/
+.border{
+     border: solid 1px black;
+     padding: 5px;
+     margin-top: 50%;
+}
+.dist{
+    display: flex;
+    justify-content: center;
+}
+.margen{
+    margin: 30px 20px;  
+}
+.img{
+    justify-content: center;
+    background-size: cover;
+}
+.footer{
+    width: 100%;
+    background-color: aquamarine;
+    height: auto;
+    border: solid 1px black;
+}
