@@ -43,7 +43,7 @@ body {
   background-color: lemonchiffon;
 }
 body h2 {
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: orangered;
   font-size: 1.5rem;
   text-align: center;
@@ -53,11 +53,11 @@ body h2 {
 nav {
   display: flex;
   position: relative;
-  padding: 3px;
+  padding: 5px;
   height: 5vh;
-  justify-content: space-evenly;
-  background-color: green;
+  background-color: rgba(113, 189, 27, 0.89);
   align-items: center;
+  justify-content: space-evenly;
 }
 nav li {
   list-style: none;
@@ -102,6 +102,31 @@ a:hover {
   background-color: aquamarine;
   height: auto;
   border: solid 1px black;
+}
+
+/*generando unos @extend*/
+.marco1, .marco2 {
+  background-color: blue;
+  padding: 5px;
+  color: white;
+  border-radius: 20px;
+}
+
+.marco2 {
+  background-color: red;
+}
+
+/*una prueba de bucle */
+.marco3 {
+  background-color: rgb(200, 150, 60);
+}
+
+.marco4 {
+  background-color: rgb(200, 200, 80);
+}
+
+.marco5 {
+  background-color: rgb(200, 250, 100);
 }
 
 /*# sourceMappingURL=style.css.map */

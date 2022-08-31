@@ -36,7 +36,6 @@ header{
             transform: translateZ(100);
 } 
 }
-
 }
 
 /*estilo para el body*/
@@ -49,23 +48,25 @@ h2{
     text-align: center;
 }
 }
-
 /*barra de menú*/
 nav{
     display: flex;
     position:relative;
     padding: variables.$pad;
     height:5vh;
-    justify-content: space-evenly;
     background-color: variables.$bgb;
     align-items:  center;
+    justify-content: space-evenly;
             li{
                 list-style: none;
+                
                     a{
                     color: variables.$acolor;
                     text-decoration:solid;
                     font-weight: variables.$letrabarra;
                     font-size: variables.$letrahight;
+                   
+                   
 } 
 }
 }
@@ -97,4 +98,23 @@ a:hover{
     background-color: aquamarine;
     height: auto;
     border: solid 1px black;
+}
+/*generando unos @extend*/
+.marco1{
+    background-color: blue;
+    padding: 5px;
+    color: white;
+    border-radius: 20px;
+}
+.marco2{
+    @extend .marco1;
+    background-color: red;
+   
+}
+/*una prueba de bucle */
+@for $num from 3 to 6 {
+    .marco#{$num}{
+        background-color: rgb(200 $num*50 $num*20)
+        
+    }
 }

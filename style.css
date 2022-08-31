@@ -1,0 +1,17 @@
+/* Error: $red: 3 red is not a number.
+ *     ,
+ * 120 |         background-color: rgb($num red, $num green, $num blue);
+ *     |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   scss\style.scss 120:27  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: $red: 3 red is not a number.\a     \2577 \a 120 \2502          background-color: rgb($num red, $num green, $num blue);\d\a     \2502                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   scss\\style.scss 120:27  root stylesheet";
+}
