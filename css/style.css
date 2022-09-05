@@ -83,6 +83,48 @@ a:hover {
   margin-top: 50%;
 }
 
+/*****************
+mixins
+******************/
+.acord1 {
+  background-color: red;
+  color: white;
+}
+.acord1 button {
+  background-color: white;
+  font-weight: solid;
+  color: Black;
+}
+.acord1 strong {
+  color: black;
+}
+
+.acord2 {
+  background-color: white;
+  color: blue;
+}
+.acord2 button {
+  background-color: blue;
+  font-weight: solid;
+  color: white;
+}
+.acord2 strong {
+  color: red;
+}
+
+.acord3 {
+  background-color: blue;
+  color: red;
+}
+.acord3 button {
+  background-color: red;
+  font-weight: black;
+  color: white;
+}
+.acord3 strong {
+  color: white;
+}
+
 .dist {
   display: flex;
   justify-content: center;
@@ -127,6 +169,42 @@ a:hover {
 
 .marco5 {
   background-color: rgb(200, 250, 100);
+}
+
+/***** map/ map-get*****/
+.div_div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 20vh;
+  margin: 10px;
+  background-color: red;
+}
+
+.div_div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 20vh;
+  margin: 10px;
+  background-color: yellow;
+}
+
+.div_div3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 20vh;
+  margin: 10px;
+  background-color: green;
+}
+
+.sect {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -82,6 +82,37 @@ a:hover{
      padding: 5px;
      margin-top: 50%;
 }
+/*****************
+mixins
+******************/
+
+@mixin acordion_color($bg_color, $tx_color, $bg_button, $weight, $button_txcolor, $h2_color){
+    background-color:$bg_color;
+    color:$tx_color;
+    button{
+        background-color: $bg_button;
+        font-weight: $weight;
+        color: $button_txcolor        
+}
+    strong{
+        color: $h2_color;
+}
+}
+.acord1{
+    @include acordion_color(red,white, white,solid,Black, black);
+}
+.acord2{
+    @include acordion_color(white,blue, blue, solid, white, red);
+}
+.acord3{
+    @include acordion_color(blue, red, red, black, white, white);
+}
+
+
+
+
+
+
 .dist{
     display: flex;
     justify-content: center;
@@ -117,4 +148,28 @@ a:hover{
         background-color: rgb(200 $num*50 $num*20)
         
     }
+}
+/***** map/ map-get*****/
+$mapa: (
+    div1: red,
+    div2: yellow,
+    div3: green,
+);
+
+@each $var, $colorin in $mapa {
+    .div_#{$var}{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 30%;
+        height: 20vh;
+        margin: 10px;
+        background-color: $colorin;
+        
+    }
+}
+.sect{
+    display: flex;
+    justify-content: space-evenly;
+    
 }
